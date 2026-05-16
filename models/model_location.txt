@@ -1,2 +1,1 @@
-
-https://huggingface.co/Path2AI/YOLO/tree/main
+Download the model from the following location and place it under models folder. https://huggingface.co/Path2AI/YOLO/tree/main
