@@ -1,0 +1,8 @@
+category,item,details
+summary,positive_images,77
+summary,positive_xmls,77
+summary,negative_images,378
+summary,missing_xml_count,0
+summary,orphan_xml_count,0
+summary,broken_image_count,0
+summary,broken_xml_count,0
