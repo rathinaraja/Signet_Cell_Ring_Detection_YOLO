@@ -1,0 +1,22 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# Object detection — YOLO + PyTorch (auto-installed as ultralytics dependency)
+# ─────────────────────────────────────────────────────────────────────────────
+ultralytics>=8.0.0          # YOLO26 + all Ultralytics utilities
+                            # automatically installs: torch, torchvision,
+                            #   numpy, opencv-python, matplotlib, scipy, tqdm
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Image processing
+# ─────────────────────────────────────────────────────────────────────────────
+Pillow>=9.0.0               # PIL — Image, ImageDraw used in audit + visualise scripts
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+PyYAML>=6.0                 # yaml — YOLO dataset .yaml read/write
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Standard library modules — no install needed (listed for reference only)
+# pathlib, csv, random, shutil, math, statistics,
+# xml.etree.ElementTree, collections
+# ─────────────────────────────────────────────────────────────────────────────
