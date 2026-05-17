@@ -72,6 +72,17 @@ Whole Slide Images (WSIs) are gigapixel-scale digital scans of tissue sections. 
 
 **Our approach** tiles each WSI into `512 × 512` pixel patches, applies YOLO-based object detection on each tile, and aggregates detections back to slide coordinates.
 
+--- 
+
+### Sample SRC Detections
+
+| Input Image | Detection Output |
+|:-----------:|:----------------:|
+| <img src="images/sample1_input.jpeg" width="300" alt="Sample 1 — Input tile"/> | <img src="images/sample1_detection.jpeg" width="300" alt="Sample 1 — SRC detected"/> |
+| <img src="images/sample2_input.jpeg" width="300" alt="Sample 2 — Input tile"/> | <img src="images/sample2_detection.jpeg" width="300" alt="Sample 2 — SRC detected"/> |
+
+> Green bounding boxes indicate detected Signet Ring Cells with confidence scores.
+
 ---
 
 ### YOLO for Object Detection
@@ -336,6 +347,12 @@ SRC_detection/
 │   ├── visualize_digestpath_xml.py  ← Annotated image visualisation
 │   └── visualize_yolo_tiles.py      ← YOLO tile label visualisation
 │
+├── images/
+│   ├── sample1_input.jpeg        ← raw tile, no annotations
+│   ├── sample1_detection.jpeg    ← same tile with YOLO detections overlaid
+│   ├── sample2_input.jpeg
+│   └── sample2_detection.jpeg
+│
 ├── models/
 │   ├── yolo26l.pt                   ← Large  (auto-downloaded if missing)
 │   ├── yolo26m.pt                   ← Medium
@@ -355,7 +372,6 @@ SRC_detection/
 │   └── detect/
 │       └── val/                     ← Validation metrics: F1, P, R,
 │                                       PR curve, confusion matrix
-│
 ├── runs_yolo2026/
 │   ├── digestpath_yolo26l_1024/           ← Large model training
 │   ├── digestpath_yolo26l_1024_pred_val/  ← Large model val predictions
