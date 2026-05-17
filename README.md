@@ -111,18 +111,18 @@ Whole Slide Images (WSIs) are gigapixel-scale digital scans of tissue sections. 
 | `yolo26l.pt` | Large | Slower | **Highest accuracy** |
 
 ---
-## Environment Setup
+### Install Dependencies
 
-#### Using pip
 ```bash
 pip install -r requirements.txt
 ```
 
-#### Using conda
-```bash
+Or  
+
+```bash 
 conda env create -f environment.yml
 conda activate src_detection
-```
+```  
 ---
 ## Dataset
 
@@ -177,14 +177,6 @@ Each XML file contains bounding box coordinates for every annotated SRC in the c
   </object>
 </annotation>
 ```
-
-#### Sample Images
-
-| Negative Sample (`sig-train-neg`) | Positive Sample (`sig-train-pos`) |
-|:---------------------------------:|:---------------------------------:|
-| <img src="assets/sample_neg.jpeg" width="300" alt="Negative sample — no SRC"/> | <img src="assets/sample_pos.jpeg" width="300" alt="Positive sample — SRC annotated"/> |
-| Background tissue — no SRC present | SRC instances marked with bounding boxes |
-
 ---
 
 ### Dataset Audit Tools
