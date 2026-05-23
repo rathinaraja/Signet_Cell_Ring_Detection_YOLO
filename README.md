@@ -7,7 +7,7 @@
 [![Dataset](https://img.shields.io/badge/Dataset-DigestPath-green?style=flat-square)](https://digestpath2019.grand-challenge.org/)
 [![Task](https://img.shields.io/badge/Task-Object%20Detection-purple?style=flat-square)]()
 
----   
+---    
 
 ## Table of Contents
 
